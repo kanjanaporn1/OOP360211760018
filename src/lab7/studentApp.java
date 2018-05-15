@@ -11,7 +11,7 @@ public class studentApp {
         Student s1 =new Student();
         s1.setName("Mit");
         s1.setAge(22);
-        s1.setGrnder("Male");
+        s1.setGender("Male");
         s1.setHeight(180);
         System.out.println( s1.toString());
 
@@ -48,7 +48,7 @@ public class studentApp {
         System.out.println("Age");
         s3.setAge(sc.nextInt());
         System.out.println("Gender:");
-        s3.setGrnder(sc.nextLine());
+        s3.setGender(sc.nextLine());
         System.out.println("Heih:");
         s3.setHeight(sc.nextDouble());
 
