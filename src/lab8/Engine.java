@@ -1,19 +1,17 @@
 package lab8;
 //1. engine size
-//2. hores power
+//2. horse power
 public class Engine {
-    private  int engSize;
-    private  int horsePower;
-
+    private int engSize;
+    private int horsePower;
 
     //constructor
-    public  void Engint (){}
+    public  Engine(){}
 
     public Engine(int engSize, int horsePower) {
         this.engSize = engSize;
         this.horsePower = horsePower;
     }
-
     //toString
 
     @Override
@@ -23,6 +21,8 @@ public class Engine {
                 ", horsePower=" + horsePower +
                 '}';
     }
+
+    //getter and setter
 
     public int getEngSize() {
         return engSize;
@@ -39,4 +39,4 @@ public class Engine {
     public void setHorsePower(int horsePower) {
         this.horsePower = horsePower;
     }
-}
+}//class

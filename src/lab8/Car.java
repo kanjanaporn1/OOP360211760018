@@ -1,33 +1,32 @@
 package lab8;
-//1. Color - Strint
-//2. Brand - Strint
-//3. carID - Strint
-//4. Engine (has-a relation) - Engine
+//1. Color - String
+//2. Brand - String
+//3. carID - String
+//4. Engine  (has-a relation) - Engine
 public class Car {
-    private  String color;
-    private  String Brand;
-    private  String carID;
-    private  String engine;
+    private String color;
+    private String brand;
+    private String carID;
+    private Engine engine;
 
     //constructor
-    public  void  Car (){}
+    public Car(){}
 
-    public Car(String color, String brand, String carID, String engine) {
+    public Car(String color, String brand, String carID, Engine engine) {
         this.color = color;
-        Brand = brand;
+        this.brand = brand;
         this.carID = carID;
         this.engine = engine;
     }
     //toString
 
-
     @Override
     public String toString() {
         return "Car{" +
                 "color='" + color + '\'' +
-                ", Brand='" + Brand + '\'' +
+                ", brand='" + brand + '\'' +
                 ", carID='" + carID + '\'' +
-                ", engine='" + engine + '\'' +
+                ", engine=" + engine +
                 '}';
     }
     //getter and setter
@@ -41,11 +40,11 @@ public class Car {
     }
 
     public String getBrand() {
-        return Brand;
+        return brand;
     }
 
     public void setBrand(String brand) {
-        Brand = brand;
+        this.brand = brand;
     }
 
     public String getCarID() {
@@ -56,11 +55,11 @@ public class Car {
         this.carID = carID;
     }
 
-    public String getEngine() {
+    public Engine getEngine() {
         return engine;
     }
 
-    public void setEngine(String engine) {
+    public void setEngine(Engine engine) {
         this.engine = engine;
     }
-}//Class
+}//class
